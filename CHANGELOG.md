@@ -17,3 +17,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   timestamps disagree, instead of trusting the header.
 - A fixture for the mismatch, and the smoke run now covers it.
 
+## [1.0.0] - 2025-09-23
+
+### Added
+
+- Stable CLI contract: `surface`, `unused` and `report` with exit codes 0, 1
