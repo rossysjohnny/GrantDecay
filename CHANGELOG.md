@@ -22,3 +22,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Stable CLI contract: `surface`, `unused` and `report` with exit codes 0, 1
+  and 2.
+- `docs/FORMAT.md` as the written contract for the entitlement export, the
+  access log and the report keys.
+- Deterministic JSON report with a fixed key order.
+
