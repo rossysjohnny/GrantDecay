@@ -32,3 +32,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - A second pass over the access log that separates never-seen principals from
+  seen-but-idle ones.
+- `--min-window-days` override for the window guard.
+
+## [0.7.0] - 2021-10-26
+
+### Added
