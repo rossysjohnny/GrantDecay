@@ -48,3 +48,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - JSON report: `report --format json` with stable key order.
+- Per-finding evidence blocks quoting the log lines behind each conclusion.
+
+## [0.5.0] - 2019-09-30
+
+### Added
