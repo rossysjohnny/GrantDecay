@@ -53,3 +53,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [0.5.0] - 2019-09-30
 
 ### Added
+
+- `narrowable-role` findings: roles whose every permission was exercised by at
+  most one principal.
+- Role expansion is printed as a table so the narrowing can be checked by hand.
+
+## [0.4.0] - 2018-10-09
