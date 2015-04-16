@@ -59,3 +59,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Role expansion is printed as a table so the narrowing can be checked by hand.
 
 ## [0.4.0] - 2018-10-09
+
+### Added
+
+- `dormant-principal` findings with the window share each principal was absent.
+- Window share is reported as days, not as a percentage, so the unit survives
