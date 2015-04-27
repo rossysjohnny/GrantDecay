@@ -64,3 +64,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - `dormant-principal` findings with the window share each principal was absent.
 - Window share is reported as days, not as a percentage, so the unit survives
+  a copy paste.
+
+## [0.3.0] - 2017-11-28
+
+### Added
