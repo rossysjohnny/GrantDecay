@@ -69,3 +69,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [0.3.0] - 2017-11-28
 
 ### Added
+
+- Explicit observation window model: a window shorter than the minimum is
+  refused, never silently widened.
+- `surface` subcommand printing the effective permission set per principal.
+
