@@ -60,3 +60,17 @@ permission they were never granted) from the three that do.
 - It does not model permission hierarchies, wildcards, deny rules, conditions,
   or time-bound grants. A permission is an opaque string that either matches or
   does not.
+- It does not infer intent. A permission exercised once counts as exercised, the
+  same as one exercised a thousand times. The surface is about presence, not
+  volume.
+- It does not read real production exports. The bundled samples are authored
+  test vectors, documented as such in `samples/README.md`.
+
+
+## Install
+
+No dependencies beyond the Python standard library, Python 3.11 or newer.
+
+```
+python -m pip install -e .
+```
