@@ -74,3 +74,17 @@ No dependencies beyond the Python standard library, Python 3.11 or newer.
 ```
 python -m pip install -e .
 ```
+
+Or run straight from the source tree without installing, which is how every
+command in this README was run:
+
+```
+set PYTHONPATH=src
+python -m grantdecay version
+```
+
+
+## Quick start
+
+The two sample files ship in `samples/`. Point the CLI at them.
+
