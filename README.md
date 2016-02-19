@@ -88,3 +88,17 @@ python -m grantdecay version
 
 The two sample files ship in `samples/`. Point the CLI at them.
 
+Command:
+
+```
+python -m grantdecay report samples/entitlements.txt samples/accesslog.txt
+```
+
+Output captured in this session:
+
+```
+grantdecay report
+window: 2026-06-01..2026-07-01 (31 days)
+minimum window: 30 days
+conclusive: yes
+unused permission surface: 3
