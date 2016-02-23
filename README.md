@@ -102,3 +102,17 @@ window: 2026-06-01..2026-07-01 (31 days)
 minimum window: 30 days
 conclusive: yes
 unused permission surface: 3
+
+## unused permissions (1)
+  svc-web: deploy:rollback
+
+## narrowable roles (1)
+  role:deploy: deploy:rollback
+
+## dormant principals (1)
+  svc-batch: billing:export, billing:view
+
+## ungranted use (1)
+  svc-oncall: repo:read
+```
+
