@@ -116,3 +116,16 @@ unused permission surface: 3
   svc-oncall: repo:read
 ```
 
+The command exits 1 because findings are present.
+
+
+## The input formats
+
+Both files are line-oriented plain text. Blank lines and lines whose first non
+space character is `#` are ignored. This keeps the inputs diffable in git and
+easy to author by hand.
+
+### Entitlement export
+
+Two record kinds:
+
