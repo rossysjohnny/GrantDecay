@@ -185,3 +185,16 @@ with the window, which is the format meant for grepping and diffing.
 The first three ask you to consider removing access, and the window label tells
 you how much confidence the observation carries. The fourth is different: it is
 not about removing access, it is a signal that your entitlement export does not
+match reality. Either the export was captured before a grant that has since been
+made, or something is exercising a permission through a path the entitlement
+system does not see. Both are worth knowing before you trust any of the other
+findings.
+
+
+## The algorithm and its hard edge
+
+The core comparison is a set difference per principal: granted permissions minus
+exercised permissions equals unused permissions. That part is simple. The hard
+edge is deciding when the set difference is allowed to mean anything.
+
+grantdecay uses a minimum window, default 30 days, set in `window.py`. When the
