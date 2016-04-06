@@ -212,3 +212,17 @@ and you can override it with `--min-days`.
 The narrowable-role check has its own edge. A role is narrowable when some
 permission it confers was exercised by none of its holders. A role held only by a
 dormant principal would therefore look narrowable for every one of its
+permissions, which double-reports the same fact already captured by the dormant
+principal finding. The bundled sample avoids this by giving the billing role a
+second, active holder, so the role and the dormant principal are reported
+independently. See the design notes below.
+
+
+## Worked walkthrough, one principal end to end
+
+Follow `svc-web` through the sample run.
+
+In `samples/entitlements.txt`, `svc-web` is granted two roles:
+
+```
+grant svc-web    deploy read
