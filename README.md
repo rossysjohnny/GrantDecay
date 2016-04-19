@@ -281,3 +281,17 @@ svc-batch granted=2 exercised=0 unused=2
 svc-finance granted=2 exercised=2 unused=0
 svc-oncall granted=2 exercised=2 unused=0
 svc-web granted=5 exercised=4 unused=1
+```
+
+### unused
+
+Command:
+
+```
+python -m grantdecay unused samples/entitlements.txt samples/accesslog.txt
+```
+
+Output captured in this session:
+
+```
+dormant-principal svc-batch [billing:export,billing:view] window=2026-06-01..2026-07-01 (31 days)
