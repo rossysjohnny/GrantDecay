@@ -17,3 +17,5 @@ classifiers = [
     "Topic :: Security",
 ]
 
+[project.scripts]
+grantdecay = "grantdecay.cli:main"
