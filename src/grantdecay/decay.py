@@ -40,3 +40,15 @@ FINDING_KINDS = (
     KIND_NARROWABLE_ROLE,
     KIND_DORMANT_PRINCIPAL,
     KIND_UNGRANTED_USE,
+)
+
+
+@dataclass(frozen=True)
+class Finding:
+    """One finding.
+
+    ``kind`` is one of the KIND_* constants. ``principal`` is the subject, or an
+    empty string for role-level findings. ``role`` is set for narrowable-role
+    findings. ``permissions`` is the sorted tuple of permissions the finding
+    concerns. ``window_label`` stamps the observation window on the finding.
+    """
