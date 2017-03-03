@@ -29,3 +29,14 @@ from dataclasses import dataclass
 from .accesslog import AccessLog
 from .entitlement import Entitlements
 from .window import Window, is_conclusive
+
+KIND_UNUSED_PERMISSION = "unused-permission"
+KIND_NARROWABLE_ROLE = "narrowable-role"
+KIND_DORMANT_PRINCIPAL = "dormant-principal"
+KIND_UNGRANTED_USE = "ungranted-use"
+
+FINDING_KINDS = (
+    KIND_UNUSED_PERMISSION,
+    KIND_NARROWABLE_ROLE,
+    KIND_DORMANT_PRINCIPAL,
+    KIND_UNGRANTED_USE,
