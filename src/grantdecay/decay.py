@@ -87,3 +87,14 @@ def build_surface(ent: Entitlements, log: AccessLog) -> list[Surface]:
 
     Exercised permissions are intersected with the granted set so the surface
     shows exercised-and-granted. Permissions exercised but never granted are not
+    part of a principal's granted surface; they surface as ungranted-use findings
+    instead.
+    """
+    surfaces: list[Surface] = []
+    for principal in ent.principals():
+        granted = ent.effective_permissions(principal)
+        granted_set = set(granted)
+        used = log.used_permissions(principal)
+        exercised = tuple(sorted(p for p in used if p in granted_set))
+        surfaces.append(
+            Surface(principal=principal, granted=granted, exercised=exercised)
