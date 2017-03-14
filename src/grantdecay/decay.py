@@ -98,3 +98,15 @@ def build_surface(ent: Entitlements, log: AccessLog) -> list[Surface]:
         exercised = tuple(sorted(p for p in used if p in granted_set))
         surfaces.append(
             Surface(principal=principal, granted=granted, exercised=exercised)
+        )
+    return surfaces
+
+
+def analyze(
+    ent: Entitlements, log: AccessLog, min_days: int
+) -> tuple[list[Finding], bool]:
+    """Run the analysis and return (findings, conclusive).
+
+    ``conclusive`` reflects whether the window met ``min_days``. When it did not,
+    absence-based findings (the first three kinds) are suppressed and only
+    ungranted-use findings are produced.
