@@ -52,3 +52,15 @@ class Finding:
     findings. ``permissions`` is the sorted tuple of permissions the finding
     concerns. ``window_label`` stamps the observation window on the finding.
     """
+
+    kind: str
+    principal: str
+    role: str
+    permissions: tuple[str, ...]
+    window_label: str
+
+    def sort_key(self) -> tuple:
+        return (self.kind, self.principal, self.role, self.permissions)
+
+
+@dataclass
