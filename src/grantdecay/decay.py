@@ -64,3 +64,14 @@ class Finding:
 
 
 @dataclass
+class Surface:
+    """The per-principal granted versus exercised surface.
+
+    ``granted`` and ``exercised`` are sorted tuples of permission names. This is
+    the data behind both the ``surface`` command and the diagram.
+    """
+
+    principal: str
+    granted: tuple[str, ...]
+    exercised: tuple[str, ...]
+
