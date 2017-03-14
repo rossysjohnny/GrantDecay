@@ -75,3 +75,15 @@ class Surface:
     granted: tuple[str, ...]
     exercised: tuple[str, ...]
 
+    @property
+    def unused(self) -> tuple[str, ...]:
+        """Permissions granted but not exercised, sorted."""
+        used = set(self.exercised)
+        return tuple(p for p in self.granted if p not in used)
+
+
+def build_surface(ent: Entitlements, log: AccessLog) -> list[Surface]:
+    """Return the granted versus exercised surface for every principal, sorted.
+
+    Exercised permissions are intersected with the granted set so the surface
+    shows exercised-and-granted. Permissions exercised but never granted are not
