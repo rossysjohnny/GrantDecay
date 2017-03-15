@@ -145,3 +145,14 @@ def _absence_findings(
     """Append the three absence-based finding kinds to ``findings``."""
     surfaces = {s.principal: s for s in build_surface(ent, log)}
 
+    for principal in ent.principals():
+        surface = surfaces[principal]
+        # dormant-principal: holds permissions but exercised none of them.
+        if surface.granted and not surface.exercised:
+            findings.append(
+                Finding(
+                    kind=KIND_DORMANT_PRINCIPAL,
+                    principal=principal,
+                    role="",
+                    permissions=surface.granted,
+                    window_label=label,
