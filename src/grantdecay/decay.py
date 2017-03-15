@@ -156,3 +156,15 @@ def _absence_findings(
                     role="",
                     permissions=surface.granted,
                     window_label=label,
+                )
+            )
+            continue
+        # unused-permission: holds some it never exercised (but not fully dormant).
+        if surface.unused:
+            findings.append(
+                Finding(
+                    kind=KIND_UNUSED_PERMISSION,
+                    principal=principal,
+                    role="",
+                    permissions=surface.unused,
+                    window_label=label,
