@@ -28,3 +28,12 @@ from dataclasses import dataclass, field
 class EntitlementError(ValueError):
     """Raised when the entitlement export cannot be parsed or expanded."""
 
+
+@dataclass(frozen=True)
+class Grant:
+    """One principal and the ordered, de-duplicated roles granted to it."""
+
+    principal: str
+    roles: tuple[str, ...]
+
+
