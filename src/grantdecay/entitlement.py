@@ -20,3 +20,11 @@ The parser is strict: it reports the file, line number, and reason for every
 malformed record rather than guessing.
 """
 
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+
+
+class EntitlementError(ValueError):
+    """Raised when the entitlement export cannot be parsed or expanded."""
+
