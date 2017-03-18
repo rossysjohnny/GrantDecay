@@ -46,3 +46,11 @@ class Entitlements:
     that identical input yields identical structures.
     """
 
+    roles: dict[str, tuple[str, ...]] = field(default_factory=dict)
+    grants: dict[str, Grant] = field(default_factory=dict)
+
+    def principals(self) -> tuple[str, ...]:
+        """Return principals in sorted order."""
+        return tuple(sorted(self.grants))
+
+    def effective_permissions(self, principal: str) -> tuple[str, ...]:
