@@ -106,3 +106,12 @@ def parse_entitlements(text: str, source: str = "<entitlement>") -> Entitlements
                 )
             principal = fields[1]
             role_names = fields[2:]
+            if principal in grants:
+                raise EntitlementError(
+                    f"{source}:{lineno}: principal {principal} granted twice; "
+                    f"merge the roles onto one line"
+                )
+            # De-duplicate while preserving first-seen order, then freeze.
+            seen: list[str] = []
+            for role in role_names:
+                if role not in seen:
