@@ -98,3 +98,11 @@ def parse_entitlements(text: str, source: str = "<entitlement>") -> Entitlements
             name = fields[1]
             perms = fields[2:]
             role_perms.setdefault(name, set()).update(perms)
+        elif kind == "grant":
+            if len(fields) < 3:
+                raise EntitlementError(
+                    f"{source}:{lineno}: grant record needs a principal and at "
+                    f"least one role"
+                )
+            principal = fields[1]
+            role_names = fields[2:]
