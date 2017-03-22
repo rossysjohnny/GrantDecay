@@ -80,3 +80,12 @@ def parse_entitlements(text: str, source: str = "<entitlement>") -> Entitlements
     ``source`` is used only in error messages. Raises EntitlementError on any
     malformed or inconsistent record.
     """
+    role_perms: dict[str, set[str]] = {}
+    grants: dict[str, Grant] = {}
+
+    for lineno, raw in enumerate(text.splitlines(), start=1):
+        stripped = raw.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        fields = _split_record(stripped)
+        kind = fields[0]
