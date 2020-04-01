@@ -11,3 +11,6 @@ reads entitlement exports and access logs and never executes anything.
 python -m compileall -q src
 python -m pytest -q
 PYTHONPATH=src python -m grantdecay report --entitlements samples/entitlements.txt --log samples/accesslog.txt
+```
+
+## Before you open a pull request
