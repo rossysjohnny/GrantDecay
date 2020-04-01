@@ -5,3 +5,6 @@ reads entitlement exports and access logs and never executes anything.
 
 ## Development setup
 
+- Python 3.11+. The package uses the standard library only.
+
+```bash
