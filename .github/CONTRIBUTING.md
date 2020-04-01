@@ -8,3 +8,6 @@ reads entitlement exports and access logs and never executes anything.
 - Python 3.11+. The package uses the standard library only.
 
 ```bash
+python -m compileall -q src
+python -m pytest -q
+PYTHONPATH=src python -m grantdecay report --entitlements samples/entitlements.txt --log samples/accesslog.txt
