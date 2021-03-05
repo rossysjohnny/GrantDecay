@@ -17,3 +17,7 @@
   <text x="48" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#8fb3c7">privilege granted and never used, measured across an observation window</text>
   <rect x="48" y="156" width="420" height="34" rx="6" fill="url(#win)" stroke="#2e5468"/>
   <line x1="60" y1="173" x2="456" y2="173" stroke="#4b7d99" stroke-width="2"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">
+    <rect x="60" y="200" width="92" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
+    <text x="106" y="217" fill="#a9cadd" text-anchor="middle">unused-permission</text>
+    <rect x="164" y="200" width="86" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
