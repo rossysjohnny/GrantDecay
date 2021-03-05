@@ -13,3 +13,7 @@
   <g stroke="#1c2f3d" stroke-width="1">
     <path d="M0 65 H960 M0 130 H960 M0 195 H960 M240 0 V260 M480 0 V260 M720 0 V260"/>
   </g>
+  <text x="48" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#f2f7fb">GrantDecay</text>
+  <text x="48" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#8fb3c7">privilege granted and never used, measured across an observation window</text>
+  <rect x="48" y="156" width="420" height="34" rx="6" fill="url(#win)" stroke="#2e5468"/>
+  <line x1="60" y1="173" x2="456" y2="173" stroke="#4b7d99" stroke-width="2"/>
