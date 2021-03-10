@@ -21,3 +21,7 @@
     <rect x="60" y="200" width="92" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
     <text x="106" y="217" fill="#a9cadd" text-anchor="middle">unused-permission</text>
     <rect x="164" y="200" width="86" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
+    <text x="207" y="217" fill="#a9cadd" text-anchor="middle">narrowable-role</text>
+    <rect x="262" y="200" width="98" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
+    <text x="311" y="217" fill="#a9cadd" text-anchor="middle">dormant-principal</text>
+    <rect x="372" y="200" width="96" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
