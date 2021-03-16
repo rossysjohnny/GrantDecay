@@ -25,3 +25,7 @@
     <rect x="262" y="200" width="98" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
     <text x="311" y="217" fill="#a9cadd" text-anchor="middle">dormant-principal</text>
     <rect x="372" y="200" width="96" height="26" rx="13" fill="#17313f" stroke="#2e5468"/>
+    <text x="420" y="217" fill="#a9cadd" text-anchor="middle">ungranted-use</text>
+  </g>
+  <g transform="translate(560 60)">
+    <text x="0" y="0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#6f93a8">observation window</text>
