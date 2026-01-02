@@ -74,3 +74,18 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   refused, never silently widened.
 - `surface` subcommand printing the effective permission set per principal.
 
+## [0.2.0] - 2016-09-13
+
+### Added
+
+- Access log parser with a required observation window header.
+- `unused-permission` findings: granted, never exercised inside the window.
+
+## [0.1.0] - 2015-04-20
+
+### Added
+
+- First release: entitlement export parser that expands roles into effective
+  permissions, and a line oriented report with a findings total.
+
+<!-- draft note 1628 -->
