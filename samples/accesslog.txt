@@ -30,3 +30,6 @@ window 2026-06-01 2026-07-01
 2026-06-03 svc-oncall incident:ack
 2026-06-07 svc-oncall logs:read
 2026-06-15 svc-oncall repo:read
+2026-06-27 svc-oncall incident:ack
+
+<!-- draft note 1630 -->
