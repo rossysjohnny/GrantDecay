@@ -32,4 +32,4 @@ window 2026-06-01 2026-07-01
 2026-06-15 svc-oncall repo:read
 2026-06-27 svc-oncall incident:ack
 
-<!-- draft note 1630 -->
+<!-- draft note 1632 -->
