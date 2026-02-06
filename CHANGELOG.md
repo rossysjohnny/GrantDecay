@@ -88,4 +88,4 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - First release: entitlement export parser that expands roles into effective
   permissions, and a line oriented report with a findings total.
 
-<!-- draft note 1628 -->
+<!-- draft note 1637 -->
