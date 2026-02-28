@@ -29,3 +29,11 @@
   </g>
   <g transform="translate(560 60)">
     <text x="0" y="0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#6f93a8">observation window</text>
+    <text x="0" y="24" font-family="Consolas, Menlo, monospace" font-size="14" fill="#cfe4ef">2026-06-01 .. 2026-07-01</text>
+    <text x="0" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#6f93a8">findings</text>
+    <text x="0" y="76" font-family="Consolas, Menlo, monospace" font-size="14" fill="#cfe4ef">unused 1 | roles 1 | dormant 1 | ungranted 1</text>
+    <text x="0" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#6f93a8">exit codes</text>
+    <text x="0" y="132" font-family="Consolas, Menlo, monospace" font-size="14" fill="#cfe4ef">0 clean | 1 findings | 2 usage</text>
+  </g>
+  <text x="48" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#547a90">offline | standard library only | python 3.11+</text>
+</svg>
