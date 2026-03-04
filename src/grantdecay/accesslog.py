@@ -126,3 +126,4 @@ def parse_access_log(text: str, source: str = "<accesslog>") -> AccessLog:
             f"'window <start> <end>'"
         )
 
+    return AccessLog(window=window, exercised=exercised)
