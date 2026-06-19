@@ -134,3 +134,4 @@ def parse_entitlements(text: str, source: str = "<entitlement>") -> Entitlements
                     f"{role!r} which no role record declares"
                 )
 
+    return Entitlements(roles=roles, grants=grants)
