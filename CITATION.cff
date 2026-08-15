@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite it as below."
+title: "GrantDecay"
+abstract: "Find privilege that was granted and never used, measured across an observation window."
+type: software
+license: MIT
+authors:
+  - name: GrantDecay contributors
+version: 1.0.1
+date-released: 2026-06-30
