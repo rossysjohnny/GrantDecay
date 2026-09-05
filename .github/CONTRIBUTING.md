@@ -14,3 +14,8 @@ PYTHONPATH=src python -m grantdecay report --entitlements samples/entitlements.t
 ```
 
 ## Before you open a pull request
+
+1. Compile and the full test suite must pass.
+2. Every new finding kind needs a fixture, a test and a paragraph in the README
+   explaining what it should trigger.
+3. Keep the package dependency-free.
