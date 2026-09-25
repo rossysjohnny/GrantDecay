@@ -156,6 +156,9 @@ window would then disagree.
 
 ## Output format, field by field
 
+Keys are stable once released. Adding keys is a minor
+change; renaming or removing one is a breaking change and is treated as one.
+
 The `report` command prints a header block then one section per finding kind.
 
 | Line                          | Meaning                                              |
