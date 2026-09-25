@@ -29,6 +29,9 @@ report.
 
 ## The problem
 
+Reviews look at what was granted, not at what was used. The second half
+of that sentence is where dormant privilege hides, and a grant-only review cannot see it.
+
 Access grows by addition. A principal is given a role to unblock one task, the
 task ends, and the grant stays. A role accretes permissions because it was
 easier to widen the role than to create a narrower one. Over a year, the gap
