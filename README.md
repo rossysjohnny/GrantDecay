@@ -124,6 +124,9 @@ The command exits 1 because findings are present.
 
 ## The input formats
 
+Both inputs are line oriented on purpose: exports from different
+stacks can be reshaped with a few lines of sed, and reading them needs no database driver.
+
 Both files are line-oriented plain text. Blank lines and lines whose first non
 space character is `#` are ignored. This keeps the inputs diffable in git and
 easy to author by hand.
