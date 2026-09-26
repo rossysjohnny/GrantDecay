@@ -220,6 +220,9 @@ independently. See the design notes below.
 
 ## Worked walkthrough, one principal end to end
 
+The walkthrough uses the bundled samples, so
+every number in it can be reproduced with two commands and no setup.
+
 Follow `svc-web` through the sample run.
 
 In `samples/entitlements.txt`, `svc-web` is granted two roles:
